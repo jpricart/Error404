@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,39 +36,19 @@
     </div>
   </header>
 
-  <main>
+  <div class="areaPromocional">
     <section class="slider">
+
       <div class="slide active">
-        <img src="https://i0.wp.com/somostechbros.com/wp-content/uploads/2020/10/Samsung-Galaxy-S30-portada.jpg?w=1200&ssl=1" alt="">
-        <div class="slideInfo">
-          <h2>Samsung Galaxy S30 Ultra</h2>
-          <p>Ilustración del turista.</p>
-          <a href="" type="button">Más info</a>
-        </div>
+        <img src="./resources/promo1.webp" alt="">
       </div>
 
       <div class="slide">
-        <img src="./resources/river.jpg" alt="">
-        <div class="slideInfo">
-          <h2>Río</h2>
-          <p>Ilustración de un tipito en el río.</p>
-        </div>
+        <img src="./resources/promo2.webp" alt="">
       </div>
 
       <div class="slide">
-        <img src="./resources/pirate.jpg" alt="">
-        <div class="slideInfo">
-          <h2>Chica pirata</h2>
-          <p>Ilustración de una chica pirata.</p>
-        </div>
-      </div>
-
-      <div class="slide">
-        <img src="./resources/wolf.jpg" alt="">
-        <div class="slideInfo">
-          <h2>Lobo</h2>
-          <p>Ilustración del lobo.</p>
-        </div>
+        <img src="./resources/promo3.webp" alt="">
       </div>
 
       <div class="navigation">
@@ -82,20 +63,203 @@
       </div>
     </section>
 
-    <section class="promo">
-      <img src="./resources/promo.jpg" alt="Promo del mes">
-    </section>
+    <div class="c__cabeceraTienda">
+      <div class="cabeceraTienda">
+        <h1>Tienda M<i class="fa-regular fa-gem"></i>BI</h1>
+        <button>Ver carrito <i class="fa-solid fa-cart-shopping"><span id="carritoContador"
+              class="carritoContador">0</span></i></button>
+      </div>
+    </div>
+  </div>
 
-    <section class="productos">
+  <main>
+    <div id="miModal" class="modal">
+      <div class="modal-contenido ventana-emergente">
+        <span class="cerrar-modal" id="cerrarModal">&times;</span>
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito-modal">
+          <!-- Los productos seleccionados se agregarán acá -->
+        </ul>
+        <p class="pTotal">Total: <span id="total-modal">0</span></p>
+        <button class="comprar">COMPRAR TODO</button>
+      </div>
+    </div>
+
+    <section class="tienda">
       <div class="producto">
-        <img src="./resources/MotoEdge/1.webp" alt="">
-        <h2>Motorola Edge</h2>
-        <p>Características: 4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920 Full HD Tecnología Amoled.</p>
-        <p>Precio: $210.000</p>
-        <button>Agregar al carrito</button>
+        <div class="fotoProducto">
+          <img src="./resources/MotoEdge/1.webp" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Motorola Edge</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$210.000</p>
+          <button class="agregarCarrito" data-img="./resources/MotoEdge/1.webp"><i
+              class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/GalaxyZFold/1.webp" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Galaxy ZFold 5</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$450.000</p>
+          <button class="agregarCarrito" data-img="./resources/GalaxyZFold/1.webp"><i
+              class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/Xaomi 13 Pro/1.jpg" alt="">
+          <p class="etiquetaProducto">NUEVO</p>
+        </div>
+        <div class="infoProducto">
+          <h2>Xiaomi 13 Pro</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$360.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i>Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/iPhone 15/3.jpg" alt="">
+          <p class="etiquetaProducto">40%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>IPhone 15</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$930.000</p>
+          <button class="agregarCarrito" data-img="./resources/iPhone 15/3.jpg"><i
+              class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/iPhone 15/3.jpg" alt="">
+          <p class="etiquetaProducto">40%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>IPhone 15</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$930.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/iPhone 15/3.jpg" alt="">
+          <p class="etiquetaProducto">40%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>IPhone 15</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$930.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/iPhone 15/3.jpg" alt="">
+          <p class="etiquetaProducto">40%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>IPhone 15</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$930.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/iPhone 15/3.jpg" alt="">
+          <p class="etiquetaProducto">40%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>IPhone 15</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$930.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/MotoEdge/1.webp" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Motorola Edge</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$210.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/MotoEdge/1.webp" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Motorola Edge</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$210.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/MotoEdge/1.webp" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Motorola Edge</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$210.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/MotoEdge/1.webp" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Motorola Edge</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$210.000</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
       </div>
     </section>
+
+    <img src="./resources/bannerPromoGrande.png" alt="" class="bannerPromo">
+
+    <div class="miniBanners">
+      <img src="./resources/miniBanner1.png" alt="">
+      <img src="./resources/miniBanner2.png" alt="">
+    </div>
   </main>
+  
 
   <script src="./script.js"></script>
 </body>
