@@ -55,29 +55,7 @@ li {
   a {
       text-decoration: none;
   }
-  #hero{
-    width: 100%;
-    position: absolute;
-  }
-  .video{
   
-    left: 0;
-    width: 100%;
-      
-  }
-  .promo {
-      padding-top: 350px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 60%;
-      margin: auto;
-      position: absolute;
-      z-index: 1;
-      
-  
-  }
   h1{
       font-size: xx-large;
       font-family:'Ubuntu', sans-serif;
