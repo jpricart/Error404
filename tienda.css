@@ -632,64 +632,93 @@ main {
 
 /* footer */
 
+.letraschicas{
+  color:#767676;
+  font-size:small;
+  margin-bottom: 10px;
+}
+.c_redes{
+  cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
+}
+.linea {
+  border-top: 1px solid #ffffff;
+  height: 2px;
+  max-width: 250px;
+  padding: 0;
+  margin-left: 610px;
+}
+
+
 footer {
   width: 100%;
   height: fit-content;
-  background: var(--clr-night);
+  background: black;
+  color:white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  
 }
+
 
 footer .c__footer {
   width: 1024px;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content:center;
+  padding: 100px;
   gap: 20px;
+
 }
 
 footer .siteMap {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
+  margin-right: 50px;
 }
 
 footer .siteMap h3 {
   color: #fff;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 100;
   margin-bottom: 30px;
 }
 
 footer .siteMap a {
   text-decoration: none;
-  color: #00eeff;
+  color: var(--clr-amarillo);
   margin-bottom: 10px;
 }
 
 footer .siteMap a:hover {
   color: #fff;
-  font-weight: 700;
+  font-weight: 100;
   transform: scale(1);
   transform: translateX(1px);
 }
-
-footer .map {
+footer .map h3{
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px; 
+}
+.imgmap{
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  overflow: hidden;
+  filter: brightness(0.5);
+  
+  
 }
-
 footer .redes {
   display: flex;
   flex-direction: column;
+  margin-left: 50px;
 }
 
 footer .redes h3 {
   color: #fff;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 100;
   margin-bottom: 30px;
 }
 
@@ -699,26 +728,15 @@ footer .c_redes {
 }
 
 footer .redes i {
-  color: #fff;
+  color: var(--clr-amarillo);
   font-size: 24px;
   margin-bottom: 30px;
 }
 
 footer .redes i:hover {
-  color: #00eeff;
+  color: #fff;
   transform: scale(1.2);
 }
-
-footer .map {
-  border: 2px solid #00eeff;
-}
-
-footer .copyright {
-  font-size: 14px;
-  color: #5c5c5c;
-  margin-bottom: 10px;
-}
-
 /* media queryes */
 
 @media screen and (max-width: 1024px) {
