@@ -324,5 +324,110 @@ header {
     width: 100%;
   }
 }
+.letraschicas{
+  color:#767676;
+  font-size:small;
+  margin-bottom: 10px;
+}
+.c_redes{
+  cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
+}
+.linea {
+  border-top: 1px solid #ffffff;
+  height: 2px;
+  max-width: 250px;
+  padding: 0;
+  margin-left: 610px;
+}
+
+
+footer {
+  width: 100%;
+  height: fit-content;
+  background: black;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+footer .c__footer {
+  width: 1024px;
+  display: flex;
+  justify-content:center;
+  padding: 100px;
+  gap: 20px;
+
+}
+
+footer .siteMap {
+  display: flex;
+  flex-direction:column;
+  margin-right: 50px;
+}
+
+footer .siteMap h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+footer .siteMap a {
+  text-decoration: none;
+  color: var(--clr-amarillo);
+  margin-bottom: 10px;
+}
+
+footer .siteMap a:hover {
+  color: #fff;
+  font-weight: 100;
+  transform: scale(1);
+  transform: translateX(1px);
+}
+footer .map h3{
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px; 
+}
+.imgmap{
+  display: flex;
+  flex-direction: column;
+  filter: brightness(0.5);
+  
+  
+}
+footer .redes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+footer .redes h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+footer .c_redes {
+  display: flex;
+  gap: 20px;
+}
+
+footer .redes i {
+  color: var(--clr-amarillo);
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+footer .redes i:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
 
 
