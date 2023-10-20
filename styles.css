@@ -31,7 +31,6 @@
   border-radius: 70px;
 }
 
-
 .navbar a {
   background-color: rgb(23, 24, 26);
   text-decoration: none;
@@ -81,16 +80,16 @@ li {
       justify-content: center;
       margin-right: auto ;
       margin-left: auto;
-      background-color: rgb(0, 110, 255);
+      background-color:white;
       border-radius: 40px;
-      border: solid 1px rgb(198, 227, 92);;
+      border: solid 1px rgb(198, 227, 92);
       padding: 50px;
       margin-top: 200px;
       margin-bottom: 80px;
       width: 70%;
       margin: 60px auto;
       margin-bottom: 200px;
-      box-shadow: 1px 2px 10px #5353535e;
+      box-shadow: 1px 2px 10px #535353ad;
   }
 
   .tittle1{
@@ -175,7 +174,7 @@ li {
   overflow: hidden;
   border-radius: 6px;
   box-shadow: 0px 15px 20px
-  rgba(0 ,0 ,0 ,0.5 );
+  rgba(255, 255, 255, 0.984);
   cursor: pointer;
   margin-top: 60px;
   margin-right: 20px;
@@ -813,7 +812,7 @@ text-transform: capitalize;
   border: none;
   outline: none;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: 0.5s;
   opacity: 0;
 }
@@ -822,7 +821,7 @@ text-transform: capitalize;
 }
 .card-btnn:hover{
   background-color: var(--clr-amarillo);
-  color:#fff;
+  color:#000000;
 }
 .pre-btnn,
 .next-btnn{
@@ -1020,12 +1019,16 @@ body::-webkit-scrollbar-thumb:hover{
     flex-direction: column;
     align-items: left;
     padding: 30% 15% 23% 23%;
-  }
+  }}
   .preguntas p{
 margin-bottom: 50px;
   }
 @media screen and (max-width: 767px) {
-  
+  .seccion2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }}
   .c__navbar {
   justify-content: space-between;
   }
@@ -1041,6 +1044,8 @@ margin-bottom: 50px;
   .c__navbar ul {
     display: none;
   }
+  @media screen and (max-width: 790px){
+
 
   footer .c__footer {
     flex-direction: column;
@@ -1054,5 +1059,4 @@ margin-bottom: 50px;
 
   footer .redes {
     padding-top: 20px;
-  }
-}
+  }}

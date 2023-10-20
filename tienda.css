@@ -8,6 +8,11 @@
   --clr-night: #00081f;
   --clr-gray: #202020;
   --clr-turquesa: #00ffea;
+  --clr-verde:#6ea146;
+  --clr-azul:rgb(3, 39, 116);
+  --clr-fondo: #f2f2f2;
+  --clr-celeste:#0099ff;
+  --clr-amarillo:rgb(198, 227, 92);
 }
 
 /* ajustes globales y principales */
@@ -652,29 +657,27 @@ main {
 footer {
   width: 100%;
   height: fit-content;
-  background: black;
+  background: rgb(0, 0, 0);
   color:white;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
 }
 
-
 footer .c__footer {
-  width: 1024px;
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   justify-content:center;
-  padding: 100px;
-  gap: 20px;
-
+  margin: 40px 0;
+  overflow: hidden;
 }
 
 footer .siteMap {
+  width: 400px;
   display: flex;
   flex-direction:column;
-  margin-right: 50px;
 }
 
 footer .siteMap h3 {
@@ -696,23 +699,34 @@ footer .siteMap a:hover {
   transform: scale(1);
   transform: translateX(1px);
 }
+
+footer .map {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer .map h3{
   color: white;
   font-size: 20px;
   font-weight: 100;
   margin-bottom: 30px; 
 }
-.imgmap{
+
+.imgmap {
   display: flex;
   flex-direction: column;
   filter: brightness(0.5);
-  
-  
+  align-items: center;
+  width: 100%;
 }
+
 footer .redes {
+  width: 400px;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  align-items: center;
 }
 
 footer .redes h3 {
