@@ -75,23 +75,13 @@ li {
       mix-blend-mode: overlay;
   
   }
-  .eleccion1{
-      display: flex;
-      justify-content: center;
-      background-color: rgba(208, 192, 192, 0.066);
-      border-radius: 40px;
-      border: solid 1px rgb(198, 227, 92);;
-      padding: 30px;
-      margin-top: 40px;
-      margin-bottom: 80px;
-      width: 40%;
-  }
-  .eleccion{
+  
+  .eleccion {
       display: flex;
       justify-content: center;
       margin-right: auto ;
       margin-left: auto;
-      background-color: white;
+      background-color: rgb(0, 110, 255);
       border-radius: 40px;
       border: solid 1px rgb(198, 227, 92);;
       padding: 50px;
@@ -102,6 +92,7 @@ li {
       margin-bottom: 200px;
       box-shadow: 1px 2px 10px #5353535e;
   }
+
   .tittle1{
   margin-top: 60px;
   text-align: center;
@@ -218,9 +209,8 @@ li {
   color: white;
   font-size: x-large;
   margin-top: 30px;
-  
-  
 }
+
 /*Elegí el pack*/
 .contenedor {
 
@@ -285,13 +275,12 @@ header {
   width: 100%;
   height: 90px;
   position: relative;
-  background: var(--clr-fondo);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 4px solid #424848;
   overflow: hidden;
 }
+
 h3{
   color: var(--clr-amarillo);
   font-size:x-large;
@@ -306,10 +295,12 @@ h3{
   background: var(--clr-fondo);
   align-items: center;
   display: flex;
-  height: 25px;
+  height: 30px;
   justify-content: center;
   font-size: 0.7em;
+  top: 0;
 }
+
 /*video mundo*/
 .infoMundo {
   width: 100%;
@@ -373,19 +364,19 @@ h3{
 /* barra de navegacion con logo */
 
 .c__navbar {
+  max-width: 1100px;
   width: 100%;
+  height: 60px;
   display: flex;
-  justify-content: space-even;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 0 20px;
+  margin: 20px;
+  padding: 7px 0;
   transition: 0.3s ease;
   z-index: 2;
   position: fixed;
   background-color: #000;
   border-radius: 30px;
-
 }
 
 .c__navbar .fa-bars {
@@ -396,39 +387,39 @@ h3{
   transition: 0.3s ease;
 }
 
-.c_navbar .c_logo {
+.c__navbar .c__logo {
   display: flex;
   align-items: center;
   margin: 0 70px 0 70px;
   transition: 0.3s ease;
 }
 
-.c_navbar .c_logo:hover {
+.c__navbar .c__logo:hover {
   cursor: pointer;
 }
 
-.c_navbar .c_logo p {
+.c__navbar .c__logo p {
   color: white;
   font-size: 45px;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
-.c_navbar .c_logo i {
+.c__navbar .c__logo i {
   font-size: 45px;
-  color: var(--clr-celeste);
+  color: #00eeff;
   transform: rotateZ(10deg);
   margin-right: 3px;
   transition: 0.3s ease;
 }
 
-.c_navbar .c_logo:hover i {
+.c__navbar .c__logo:hover i {
   color: #ffffff;
-  text-shadow: 1px 1px 12px var(--clr-celeste);
+  text-shadow: 1px 1px 12px #00eeff;
 }
 
-.c_navbar .c_logo:hover p {
-  color: var(--clr-celeste);
+.c__navbar .c__logo:hover p {
+  color: var(--clr-turquesa);
   text-shadow: 0px 0px 3px #ffffff;
 }
 
@@ -1003,6 +994,27 @@ body::-webkit-scrollbar-thumb:hover{
 }
 
 /* media queryes */
+
+@media screen and (max-width: 790px) {
+  .eleccion {
+    flex-direction: column;
+  }
+
+  .infoMundo {
+    flex-direction: column;
+    height: fit-content;
+    padding: 30px 0;
+  }
+
+  .infoMundo .contTexto h2 {
+    font-size: 1.7em;
+  }
+  
+  .infoMundo .contTexto p,
+  .infoMundo .contTexto span {
+    font-size: 1.2em;
+  }
+}
 
 @media screen and (max-width: 767px) {
   
