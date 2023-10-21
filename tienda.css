@@ -47,6 +47,8 @@ header {
   z-index: 999;
 }
 
+/* contenido del header */
+
 .marquesina {
   width: 100%;
   background: var(--clr-fondo);
@@ -169,7 +171,6 @@ header {
 .c__navbar ul li .active {
   color: var(--clr-celeste);
 }
-
 
 /* main */
 
