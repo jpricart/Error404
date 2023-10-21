@@ -664,6 +664,7 @@ main {
   margin-bottom: 40px;
   margin-top: 0;
   float: left;
+  color: #000;
 }
 
 .contenedor1 figure {
@@ -701,11 +702,12 @@ main {
 .contenedor1 figure:hover > img {
   transform: scale(1.3);
 }
-.capa1 h3 {
-  color: white;
-  font-size: x-large;
-  margin-top: 30px;
+.capa1 p{
+text-align: center;
+color: var(--clr-amarillo);
+font-size: xx-large;
 }
+
 .button{
   color: black; 
   padding: 10px;
