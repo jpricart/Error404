@@ -312,6 +312,51 @@ header {
   background: #FFF;
   color: #00bcd4;
 }
+/*preguntasfrecuentes*/
+.layout {
+  width: 600px;
+  margin: auto;
+}
+.accordion {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: var(--clr-amarillo);
+  border-radius: 10px;
+}
+.accordion__question p {
+  margin: 5px;
+  padding: 0;
+  font-family: Verdana;
+  font-size: 20px;
+}
+.accordion__answer p {
+  margin: 5px;
+  padding: 10px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  background: rgb(65, 76, 70);
+  border-radius: 10px;
+}
+.accordion__answer img {
+  margin: 5px;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 999;
+}
+.accordion:hover {
+  cursor: pointer;
+}
+.accordion__answer {
+  display: none;
+}
+.accordion.active .accordion__answer {
+  display: block;
+}
 
 @media screen and (max-width: 991px) {
   .sectionForm {

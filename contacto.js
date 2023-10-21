@@ -65,3 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
   // Mostramos la fecha actual
   fechaElement.textContent = obtenerFechaActual();
 });
+/*preguntas frecuentes */
+let answers = document.querySelectorAll(".accordion");
+answers.forEach((event) => {
+  event.addEventListener("click", () => {
+    if (event.classList.contains("active")) {
+      event.classList.remove("active");
+    } else {
+      event.classList.add("active");
+    }
+  });
+});
