@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap");
-
 /* variables css */
 
 :root {
@@ -636,6 +635,7 @@ main {
   grid-column: span 2;
   margin-bottom: 10px;
 }
+
 
 /* Desctacados */
 
