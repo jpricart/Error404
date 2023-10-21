@@ -193,3 +193,17 @@ window.addEventListener('click', (event) => {
         modal.style.display = 'none';
     }
 });
+
+// Menú responsive
+
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.querySelector('.r__menu');
+const cerrar = document.querySelector('.fa-circle-xmark');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
+cerrar.addEventListener('click', () => {
+  menu.classList.remove('show');
+});

@@ -26,27 +26,224 @@
   scroll-padding: auto;
 }
 
+.icono {
+  width: 60px;
+  border-radius: 70px;
+}
+
+
+li {
+  cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
+}
+.fa-xl {
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  text-align: center;
+}
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+.eleccion {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 40px;
+  border: solid 1px rgb(198, 227, 92);
+  padding: 50px;
+  width: 70%;
+  margin: 20px auto 80px auto;
+  box-shadow: 1px 2px 10px #535353ad;
+}
+
+.tittle1 {
+  text-align: center;
+  margin-right: 30px;
+}
+.red {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.tilde {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.reloj {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.destacados {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.imagen1 {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin: bottom 0;
+  border: solid 1.5px white;
+}
+.imagen2 {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin: bottom 0;
+  border: solid 1.5px white;
+}
+
+.imagen3 {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin: bottom 0;
+  border: solid 1.5px white;
+}
+p {
+  color: var(--clr-gray);
+  font-family: "Nunito", sans-serif;
+  display: inline-block;
+}
+.pnegro {
+  color: #000;
+  font-family: "Nunito", sans-serif;
+}
+.pblanco {
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+}
+.seccion2 {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.seccion2 .contenedor {
+  width: 250px;
+  margin-right: 20px;
+}
+
+.seccion2 .contenedor figure img {
+  width: 100%;
+}
+
+.contenedor1 {
+  margin-bottom: 40px;
+  margin-top: 0;
+  float: left;
+}
+
+.contenedor1 figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.984);
+  cursor: pointer;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+.contenedor1 img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.contenedor1 figure .capa1 {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(157, 165, 167, 0.5);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.contenedor1 figure:hover > .capa1 {
+  opacity: 1;
+  visibility: visible;
+}
+.contenedor1 figure:hover > img {
+  transform: scale(1.3);
+}
+.capa1 h3 {
+  color: white;
+  font-size: x-large;
+  margin-top: 30px;
+}
+
+/*Elegí el pack*/
+.contenedor {
+  margin-bottom: 40px;
+  margin-top: 0;
+  float: left;
+}
+
+.contenedor figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+.contenedor img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.contenedor figure .capa {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(157, 165, 167, 0.5);
+  transition: all 500ms ease-out;
+  opacity: 0.5;
+  visibility: hidden;
+  text-align: center;
+}
+.contenedor figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+.contenedor figure:hover > img {
+  transform: scale(1.3);
+}
+.capa h3 {
+  color: white;
+  font-size: x-large;
+  margin-top: 30px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: white;
 }
-
-/*scroll barra lateral*/
-body::-webkit-scrollbar {
-  width: 15px;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(101, 101, 101);
-  border-radius: 8px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background-color: black;
-}
-
-/* header */
 
 header {
   max-width: 1000px;
@@ -64,7 +261,11 @@ header {
   z-index: 999;
 }
 
-/* Contenido del header */
+h3 {
+  color: var(--clr-amarillo);
+  font-size: x-large;
+}
+/**/
 
 /* marquesina */
 
@@ -78,6 +279,64 @@ header {
   font-size: 0.7em;
   top: 0;
   z-index: 999999;
+}
+
+/*video mundo*/
+.infoMundo {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  background: #1f1f23;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.infoMundo .contVideo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.infoMundo .contVideo video {
+  width: 100%;
+  height: 90%;
+  margin-left: 70px;
+}
+
+.infoMundo .contTexto {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.infoMundo .contTexto h2 {
+  font-size: 2.7em;
+  font-weight: 700;
+  color: white;
+}
+
+.infoMundo .contTexto span {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--clr-amarillo);
+}
+
+.infoMundo .contTexto p {
+  font-size: 20px;
+  color: white;
+}
+.linea1 {
+  border-top: 1px solid rgb(255, 255, 255);
+  height: 2px;
+  max-width: 500px;
+  padding: 0;
+  margin: 0;
 }
 
 /* barra de navegacion con logo */
@@ -199,8 +458,6 @@ main {
   position: relative;
   background: #f2f2f2;
 }
-
-/* slider */
 
 .slider {
   width: 100%;
@@ -337,41 +594,120 @@ main {
   box-shadow: 0 0 15px #0019fc;
 }
 
-/* POr qué elegir Mobi */
+/*footer*/
+.letraschicas {
+  color: #767676;
+  font-size: small;
+  margin-bottom: 10px;
+}
+.c_redes {
+  cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
+}
+.linea {
+  border-top: 1px solid #ffffff;
+  height: 2px;
+  max-width: 250px;
+  padding: 0;
+  margin-left: 610px;
+}
 
-.eleccion {
+footer {
+  width: 100%;
+  height: fit-content;
+  background: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .c__footer {
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  background-color: white;
-  border-radius: 40px;
-  border: solid 1px rgb(198, 227, 92);
-  padding: 50px;
-  width: 70%;
-  margin: 20px auto 80px auto;
-  box-shadow: 1px 2px 10px #535353ad;
+  margin: 40px 0;
+  overflow: hidden;
 }
 
-.tittle1 {
-  text-align: center;
-  margin-right: 30px;
-}
-.red {
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
-}
-.tilde {
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
-}
-.reloj {
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
+footer .siteMap {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Preguntas */
+footer .siteMap h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+footer .siteMap a {
+  text-decoration: none;
+  color: var(--clr-amarillo);
+  margin-bottom: 10px;
+}
+
+footer .siteMap a:hover {
+  color: #fff;
+  font-weight: 100;
+  transform: scale(1);
+  transform: translateX(1px);
+}
+
+footer .map {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .map h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.imgmap {
+  display: flex;
+  flex-direction: column;
+  filter: brightness(0.5);
+  align-items: center;
+  width: 100%;
+}
+
+footer .redes {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .redes h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+footer .c_redes {
+  display: flex;
+  gap: 20px;
+}
+
+footer .redes i {
+  color: var(--clr-amarillo);
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+footer .redes i:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
 
 /*iconos que derivan a preg frecuentes*/
 .preguntas {
@@ -398,121 +734,7 @@ main {
   color: var(--clr-celeste);
 }
 
-/* Mundo */
-
-.infoMundo {
-  width: 100%;
-  height: 650px;
-  display: flex;
-  align-items: center;
-  background: #1f1f23;
-  overflow: hidden;
-  margin-bottom: 50px;
-}
-
-.infoMundo .contVideo {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.infoMundo .contVideo video {
-  width: 100%;
-  height: 90%;
-  margin-left: 70px;
-}
-
-.infoMundo .contTexto {
-  width: 50%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 40px;
-}
-
-.infoMundo .contTexto h2 {
-  font-size: 2.7em;
-  font-weight: 700;
-  color: white;
-}
-
-.infoMundo .contTexto span {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--clr-amarillo);
-}
-
-.infoMundo .contTexto p {
-  font-size: 20px;
-  color: white;
-}
-.linea1 {
-  border-top: 1px solid rgb(255, 255, 255);
-  height: 2px;
-  max-width: 500px;
-  padding: 0;
-  margin: 0;
-}
-
-/* Elegí el Pack que más te convenga */
-
-.h2Packs {
-  text-align: center;
-}
-
-.seccionPacks {
-  max-width: 1000px;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  gap: 20px;
-}
-
-.seccionPacks .contPack {
-  width: 30%;
-  height: fit-content;
-  margin-bottom: 20px;
-  overflow: hidden;
-  border: 1px solid #6b6b6b9c;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #6d6d6d93;
-}
-
-.seccionPacks .contPack .figure {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.seccionPacks .contPack .figure img {
-  width: 100%;
-  height: 300px;
-  object-fit: fill;
-  border-radius: 10px 10px 0 0;
-}
-
-.seccionPacks .contPack .figure .capa {
-  background: var(--clr-fondo);
-  padding: 7px;
-  border-radius: 0 0 10px 10px;
-}
-
-.seccionPacks .contPack .figure .capa h3 {
-  font-size: 1em;
-}
-
-/* slider de productos */
-
+/*slider*/
 .product {
   position: relative;
   overflow: hidden;
@@ -637,207 +859,109 @@ main {
   margin-bottom: 10px;
 }
 
-/* Desctacados */
-
-.seccion2 {
-  display: flex;
-  max-width: 1000px;
+/*Onda*/
+.wave {
   width: 100%;
-  justify-content: center;
-  margin-bottom: 20px;
+  position: fixed;
+  z-index: 1;
 }
-
-.seccion2 .contenedor {
-  width: 250px;
-  margin-right: 20px;
-}
-
-.seccion2 .contenedor figure img {
+/*banner*/
+main .banner img {
   width: 100%;
 }
-
-.contenedor1 {
-  margin-bottom: 40px;
-  margin-top: 0;
-  float: left;
-}
-
-.contenedor1 figure {
-  position: relative;
-  height: 250px;
-  width: 350px;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.984);
+/*botones*/
+.button {
+  color: #222;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  padding: 10px;
   cursor: pointer;
-  margin-top: 60px;
-  margin-right: 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  margin-left: 600px;
+  margin-bottom: 0;
 }
-.contenedor1 img {
-  width: 100%;
-  height: 100%;
-  transition: all 500ms ease-out;
+
+.button:hover {
+  background: #0019fc;
+  box-shadow: 0 0 15px #0019fc;
+  color: var(--clr-hueso);
+  transition: 0.1s ease;
 }
-.contenedor1 figure .capa1 {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(157, 165, 167, 0.5);
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
+.button1 {
+  color: #222;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  margin-left: 600px;
+  margin-bottom: 150px;
+}
+
+.button1:hover {
+  background: #0019fc;
+  box-shadow: 0 0 15px #0019fc;
+  color: var(--clr-hueso);
+  transition: 0.1s ease;
+}
+
+/*icono wsp*/
+.float {
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(198, 227, 92);
+  color: black;
+  border-radius: 50px;
   text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
 }
-.contenedor1 figure:hover > .capa1 {
-  opacity: 1;
-  visibility: visible;
-}
-.contenedor1 figure:hover > img {
-  transform: scale(1.3);
-}
-.capa1 h3 {
-  color: white;
-  font-size: x-large;
-  margin-top: 30px;
-}
-
-/* marquesina de marcas */
-
+/*marquesina demarcas*/
 .container {
   background-color: white;
   height: 50px;
   width: 100%;
   margin-bottom: 0;
 }
-
-/*banner*/
-main .banner img {
-  width: 100%;
-}
-
-/* onda */
-
-.wave {
-  width: 100%;
-}
-
-
-/*footer*/
-.letraschicas {
-  color: #767676;
-  font-size: small;
-  margin-bottom: 10px;
-}
-.c_redes {
-  cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
-}
-.linea {
-  border-top: 1px solid #ffffff;
-  height: 2px;
-  max-width: 250px;
-  padding: 0;
-  margin-left: 610px;
-}
-
-footer {
-  width: 100%;
-  height: fit-content;
-  background: rgb(0, 0, 0);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/*video*/
+.tittle1 {
+  color: #f0f0f0;
+  margin-top: 60px;
   text-align: center;
+  margin-right: 30px;
 }
-
-footer .c__footer {
-  max-width: 1000px;
+.video {
+  height: 700px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-  overflow: hidden;
+  position: absolute;
+  z-index: -10;
 }
 
-footer .siteMap {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
+/*scroll barra lateral*/
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(101, 101, 101);
+  border-radius: 8px;
 }
 
-footer .siteMap h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 30px;
+body::-webkit-scrollbar-thumb:hover {
+  background-color: black;
 }
-
-footer .siteMap a {
-  text-decoration: none;
-  color: var(--clr-amarillo);
-  margin-bottom: 10px;
-}
-
-footer .siteMap a:hover {
-  color: #fff;
-  font-weight: 100;
-  transform: scale(1);
-  transform: translateX(1px);
-}
-
-footer .map {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer .map h3 {
-  color: white;
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 30px;
-}
-
-.imgmap {
-  display: flex;
-  flex-direction: column;
-  filter: brightness(0.5);
-  align-items: center;
-  width: 100%;
-}
-
-footer .redes {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer .redes h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 30px;
-}
-
-footer .c_redes {
-  display: flex;
-  gap: 20px;
-}
-
-footer .redes i {
-  color: var(--clr-amarillo);
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-footer .redes i:hover {
-  color: #fff;
-  transform: scale(1.2);
-}
-
 
 /* media queryes */
 
