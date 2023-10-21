@@ -574,10 +574,11 @@ main {
   color: white;
   outline: none;
   background-color: black;
-  border-radius: 10px;
+  border-radius: 30px;
   transition: 0.5s;
   opacity: 0;
 }
+
 .product-card:hover .card-btnn {
   opacity: 1;
 }
@@ -701,10 +702,10 @@ main {
 .contenedor1 figure:hover > img {
   transform: scale(1.3);
 }
-.capa1 h3 {
-  color: white;
-  font-size: x-large;
-  margin-top: 30px;
+.capa1 h2 {
+  color: var(--clr-amarillo);
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px;
 }
 .button{
   color: black; 
