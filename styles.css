@@ -81,6 +81,31 @@ header {
   top: 0;
   z-index: 999999;
 }
+/*globo wsp*/
+.float{
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(198, 227, 92);
+  color: black;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  z-index: 100;
+}
+.fa-xl{
+margin: auto;
+}
+a {
+  text-decoration: none;
+}
 
 /* barra de navegacion con logo */
 
@@ -901,7 +926,7 @@ footer .redes i:hover {
   .preguntas p {
     margin-bottom: 50px;
   }
-
+  
   footer .c__footer {
     flex-direction: column;
     justify-content: center;
