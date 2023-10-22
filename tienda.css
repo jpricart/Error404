@@ -31,19 +31,15 @@ body {
 }
 
 header {
-  max-width: 1000px;
   width: 100%;
   margin: 0 20px;
-  border-radius: 100px;
   height: fit-content;
   position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
-  background: #0019fc;
   overflow: hidden;
-  top: 10px;
   z-index: 999;
 }
 
@@ -168,6 +164,16 @@ header {
 
 .c__navbar ul li .active {
   color: var(--clr-celeste);
+}
+
+/* header sticky */
+
+header.scrolled {
+  max-width: 1000px;
+  width: 100%;
+  top: 10px;
+  border-radius: 100px;
+  box-shadow: 1px 1px 10px #00000091;
 }
 
 /* menu responsive */
@@ -859,6 +865,7 @@ footer .redes i:hover {
   color: #fff;
   transform: scale(1.2);
 }
+
 /* media queryes */
 
 @media screen and (max-width: 1024px) {

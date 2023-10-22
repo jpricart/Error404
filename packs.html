@@ -11,7 +11,7 @@
 
 <body>
     
-  <header>
+  <header id="sticky-header">
     <marquee class="marquesina" srollamount="100" direction="left">
       <p class="pnegro"><strong>COMBO CELU NUEVO + PACK DE INTERNET 40% DE DESCUENTO SOLO POR ESTE MES // TODAS LAS
           MARCAS EN SMARTPHONES EN CUOTAS SIN INTERÉS CON TARJETA DE CRÉDITO // APROVECHÁ LOS DESCUENTOS EN PACKS DE
@@ -19,9 +19,9 @@
     </marquee>
 
     <div class="c__navbar">
-      <ul>
-        <li><a href="" class="active">INICIO</a></li>
-        <li><a href="tienda.html">TIENDA</a></li>
+      <ul class="menu">
+        <li><a href="./index.html">INICIO</a></li>
+        <li><a href="./tienda.html">TIENDA</a></li>
       </ul>
       <div class="c__logo">
         <p>M</p>
@@ -29,12 +29,30 @@
         <p>BI</p>
       </div>
       <ul>
-        <li><a href="packs.html">PACKS</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="#" class="active">PACKS</a></li>
+        <li><a href="./contacto.html">CONTACTO</a></li>
       </ul>
-      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars" id="menu-toggle"></i>
     </div>
   </header>
+
+  <!--Menú responsive-->
+
+  <div class="r__menu">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <div class="c__logo">
+      <p>M</p>
+      <i class="fa-regular fa-gem"></i>
+      <p>BI</p>
+    </div>
+    <ul class="menu">
+      <li><a href="./index.html">INICIO</a></li>
+      <li><a href="#" class="active">TIENDA</a></li>
+      <li><a href="./packs.html">PACKS</a></li>
+      <li><a href="./contacto.html">CONTACTO</a></li>
+    </ul>
+  </div>
+
 
   <main>
     <section class="slider">
@@ -42,8 +60,7 @@
         <img src="./resources/megas2.webp" alt="">
         <div class="slideInfo">
           <h2>MOBI MEGAS GIGA</h2>
-          <p>Los mejores planes con MEGAS para tu conección..</p>
-          <a href="" type="button">Mas Info</a>
+          <p>Los mejores planes con MEGAS para tu conexión.</p>
         </div>
       </div>
 
@@ -52,7 +69,6 @@
         <div class="slideInfo">
           <h2>PACK SIEMPRE CONECTADO</h2>
           <p>WIFI 50 MB + 10 GIGAS PARA TU CELU.</p>
-          <a href="" type="button">Mas Info</a>
         </div>
       </div>
 
@@ -60,8 +76,7 @@
         <img src="./resources/empresa.webp" alt="">
         <div class="slideInfo">
           <h2>PACK PARA EMPRENDEDORES</h2>
-          <p>Busca el pack que mas se adapte a tu empresa.</p>
-          <a href="" type="button">Mas Info</a>
+          <p>Busca el pack que más se adapte a tu empresa.</p>
         </div>
       </div>
 
@@ -70,7 +85,6 @@
         <div class="slideInfo">
           <h2>LO MEJOR PARA LOS GAMERS</h2>
           <p>Mobi te ayuda a mejorar tus habilidades Gamers.</p>
-          <a href="" type="button">Mas Info</a>
         </div>
       </div>
 

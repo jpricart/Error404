@@ -1,3 +1,23 @@
+// Header sticky
+
+// Selecciona el elemento del encabezado
+const header = document.getElementById('sticky-header');
+
+// Agrega un detector de eventos de desplazamiento a la ventana
+window.addEventListener('scroll', () => {
+  // Obtiene la posición actual de desplazamiento
+  const scrollTop = window.scrollY;
+
+  // Comprueba si el usuario está en la parte superior de la página
+  if (scrollTop === 0) {
+    // Si es así, quita la clase "scrolled"
+    header.classList.remove('scrolled');
+  } else {
+    // Si no está en la parte superior, agrega la clase "scrolled" al encabezado
+    header.classList.add('scrolled');
+  }
+});
+
 // slider
 
 // variables

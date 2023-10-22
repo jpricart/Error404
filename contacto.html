@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +14,17 @@
 
 <body>
 
-  <header>
+  <header id="sticky-header">
     <marquee class="marquesina" srollamount="100" direction="left">
-      <p class="pnegro"><strong> PRODUCTOS DESTACADOS EN 12 CUOTAS SIN INTERÉS, SÓLO CON TARJETAS SELCCIONADAS -
-          PRODUCTOS DESTACADOS EN 12 CUOTAS SIN INTERÉS, SÓLO CON TARJETAS SELCCIONADAS - PRODUCTOS DESTACADOS EN 12
-          CUOTAS SIN INTERÉS, SÓLO CON TARJETAS SELCCIONADAS - PRODUCTOS DESTACADOS EN 12 CUOTAS SIN INTERÉS, SÓLO CON
-          TARJETAS SELCCIONADAS - PRODUCTOS DESTACADOS EN 12 CUOTAS SIN INTERÉS, SÓLO CON TARJETAS SELCCIONADAS -
-          PRODUCTOS DESTACADOS EN 12 CUOTAS SIN INTERÉS, SÓLO CON TARJETAS SELCCIONADAS - PRODUCTOS DESTACADOS EN 12
-          CUOTAS SIN INTERÉS, SÓLO CON TARJETAS SELCCIONADAS </strong></p>
+      <p class="pnegro"><strong>COMBO CELU NUEVO + PACK DE INTERNET 40% DE DESCUENTO SOLO POR ESTE MES // TODAS LAS
+          MARCAS EN SMARTPHONES EN CUOTAS SIN INTERÉS CON TARJETA DE CRÉDITO // APROVECHÁ LOS DESCUENTOS EN PACKS DE
+          INTERNET TRAYENDO TU NÚMERO</strong></p>
     </marquee>
+
     <div class="c__navbar">
-      <ul>
-        <li><a href="index.html" class="active">INICIO</a></li>
-        <li><a href="tienda.html">TIENDA</a></li>
+      <ul class="menu">
+        <li><a href="./index.html">INICIO</a></li>
+        <li><a href="./tienda.html">TIENDA</a></li>
       </ul>
       <div class="c__logo">
         <p>M</p>
@@ -33,187 +32,209 @@
         <p>BI</p>
       </div>
       <ul>
-        <li><a href="packs.html">PACKS</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="./packs.html">PACKS</a></li>
+        <li><a href="#" class="active">CONTACTO</a></li>
       </ul>
-      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars" id="menu-toggle"></i>
     </div>
   </header>
+
+  <!--Menú responsive-->
+
+  <div class="r__menu">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <div class="c__logo">
+      <p>M</p>
+      <i class="fa-regular fa-gem"></i>
+      <p>BI</p>
+    </div>
+    <ul class="menu">
+      <li><a href="./index.html">INICIO</a></li>
+      <li><a href="#" class="active">TIENDA</a></li>
+      <li><a href="./packs.html">PACKS</a></li>
+      <li><a href="./contacto.html">CONTACTO</a></li>
+    </ul>
+  </div>
+
+  <!-- video -->
+
   <div>
-    <video class="video" loop="true" muted autoplay >
+    <video class="video" loop="true" muted autoplay>
       <source src="./resources/cill.mp4">
-      </video>
+    </video>
   </div>
 
 
-<div class="contactoForm">
+  <div class="contactoForm">
 
 
-  <main class="mainContact">
-  <section class="sectionForm">
-    
-    <div class="section-header">
-  
-    </div>
-    
-    <div class="containerForm">
-      <div class="mainForm">
-        
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-home"></i>
+    <main class="mainContact">
+      <section class="sectionForm">
+
+        <div class="section-header">
+
+        </div>
+
+        <div class="containerForm">
+          <div class="mainForm">
+
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+
+                <div class="contact-info-content">
+                  <h4>Direccion</h4>
+                  <p>4671 Calle falsa,<br /> Buenos aires, Argentina, <br />55060</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+
+                <div class="contact-info-content">
+                  <h4>Telefono</h4>
+                  <p>54+11425921</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+
+                <div class="contact-info-content">
+                  <h4>Email</h4>
+                  <p>contacto@mobi.com</p>
+                </div>
+              </div>
             </div>
-            
-            <div class="contact-info-content">
-              <h4>Direccion</h4>
-              <p>4671 Calle falsa,<br/> Buenos aires, Argentina, <br/>55060</p>
+
+            <div class="contact-form">
+              <form action="" id="contact-form">
+                <h2>Tu mensaje</h2>
+                <div class="input-box">
+                  <input type="text" name="full_name">
+                  <span>Nombre completo</span>
+                </div>
+
+                <div class="input-box">
+                  <input type="email" name="email">
+                  <span>Email</span>
+                </div>
+
+                <div class="input-box">
+                  <textarea name="message"></textarea>
+                  <span>Escribe tu mensaje...</span>
+                </div>
+
+                <div class="input-box">
+                  <input type="submit" value="Enviar" name="submit">
+                </div>
+              </form>
+
             </div>
-          </div>
-          
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            
-            <div class="contact-info-content">
-              <h4>Telefono</h4>
-              <p>54+11425921</p>
-            </div>
-          </div>
-          
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            
-            <div class="contact-info-content">
-              <h4>Email</h4>
-             <p>contacto@mobi.com</p>
-            </div>
+
           </div>
         </div>
-        
-        <div class="contact-form">
-          <form action="" id="contact-form">
-            <h2>Tu mensaje</h2>
-            <div class="input-box">
-              <input type="text"  name="full_name">
-              <span>Nombre completo</span>
-            </div>
-          
-            <div class="input-box">
-              <input type="email" name="email">
-              <span>Email</span>
-            </div>
-          
-            <div class="input-box">
-              <textarea  name="message"></textarea>
-              <span>Escribe tu mensaje...</span>
-            </div>
-          
-            <div class="input-box">
-              <input type="submit" value="Enviar" name="submit">
-            </div>
-          </form>
-          
-        </div>
-        
+
+  </div>
+
+
+
+  <h2>Preguntas frecuentes</h2>
+  <div class="layout">
+    <div class="accordion">
+      <div class="accordion__question">
+        <p>Medios de pago</p>
+      </div>
+      <div class="accordion__answer">
+        <img src="./resources/mediosdepago.jpg" alt="Medios de pago">
       </div>
     </div>
-
+    <div class="accordion">
+      <div class="accordion__question">
+        <p>Formas de entrega</p>
+      </div>
+      <div class="accordion__answer">
+        <p>
+          Si tienes un local, showroom o sucursal,
+          la opción “punto de retiro” puede ser una buena alternativa para no pagar el costo de envío. Elija la
+          sucursal del correo que le quede más cómoda y vaya a buscarlo.
+        </p>
+      </div>
     </div>
-
-    
-
-    <h2>Preguntas frecuentes</h2>
     <div class="layout">
       <div class="accordion">
         <div class="accordion__question">
-          <p>Medios de pago</p>
+          <p>Seguí tu pedido</p>
         </div>
         <div class="accordion__answer">
-          <img src="./resources/mediosdepago.jpg" alt="Medios de pago">
+          <p>Conozca al instante el estado de tu envío. Es muy fácil para usted conocer su estado de seguimiento de
+            Surenvíos a través de nuestro sistema de seguimiento en línea. Todo lo que necesita es el número de
+            seguimiento.</p>
         </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion__question">
-          <p>Formas de entrega</p>
-        </div>
-        <div class="accordion__answer">
-          <p>
-            Si tienes un local, showroom o sucursal,
-            la opción “punto de retiro” puede ser una buena alternativa para no pagar el costo de envío. Elija la
-            sucursal del correo que le quede más cómoda y vaya a buscarlo.
-          </p>
-        </div>
-      </div>
-      <div class="layout">
-        <div class="accordion">
-          <div class="accordion__question">
-            <p>Seguí tu pedido</p>
-          </div>
-          <div class="accordion__answer">
-            <p>Conozca al instante el estado de tu envío. Es muy fácil para usted conocer su estado de seguimiento de
-              Surenvíos a través de nuestro sistema de seguimiento en línea. Todo lo que necesita es el número de
-              seguimiento.</p>
-          </div>
-        </div>
-  </div>
-</div>
-
-
-<div class="layout">
-  <div class="accordion">
-    <div class="accordion__question">
-      <p>¿Cómo comprar?</p>
-    </div>
-    <div class="accordion__answer">
-      <p>Ingrese al sitio: Seleccione los productos, revise tu compra. Una vez que esté seguro, finalice la
-        operación. A continuación, puede ver el seguimiento. ¡Fácil, cómodo y rápido!</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<footer>
-  <div class="c__footer">
-    <div class="siteMap">
-      <h3>Mapa del sitio</h3>
-      <a href="">INICIO</a>
-      <a href="">TIENDA</a>
-      <a href="">PACKS</a>
-      <a href="">CONTACTO</a>
-      <a href="">FAQS</a>
-    </div>
-    <div class="map">
-      <h3>Ubicación</h3>
-      <div class="imgmap">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.5583076628997!2d-58.383073335817855!3d-34.59236440595771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb3e15427879%3A0x5235f28d7ff3853b!2sGaleria%20magna!5e0!3m2!1ses-419!2sar!4v1697507283306!5m2!1ses-419!2sar"
-          width="150" height="160" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-    <div class="redes">
-      <h3>Redes Sociales</h3>
-      <div class="c_redes">
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-regular fa-envelope fa-xl"></i></a>
       </div>
     </div>
   </div>
-  <div class="linea"></div>
-  Copyright Grupo 404 &copy;2023
-  <br>
-  <div class="letraschicas">Aviso Legal | Accesibilidad | Avisos de incidencias | Privacidad</div>
-</footer>
 
-</main>
 
-<script src="contacto.js"></script>
+  <div class="layout">
+    <div class="accordion">
+      <div class="accordion__question">
+        <p>¿Cómo comprar?</p>
+      </div>
+      <div class="accordion__answer">
+        <p>Ingrese al sitio: Seleccione los productos, revise tu compra. Una vez que esté seguro, finalice la
+          operación. A continuación, puede ver el seguimiento. ¡Fácil, cómodo y rápido!</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="c__footer">
+      <div class="siteMap">
+        <h3>Mapa del sitio</h3>
+        <a href="">INICIO</a>
+        <a href="">TIENDA</a>
+        <a href="">PACKS</a>
+        <a href="">CONTACTO</a>
+        <a href="">FAQS</a>
+      </div>
+      <div class="map">
+        <h3>Ubicación</h3>
+        <div class="imgmap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.5583076628997!2d-58.383073335817855!3d-34.59236440595771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb3e15427879%3A0x5235f28d7ff3853b!2sGaleria%20magna!5e0!3m2!1ses-419!2sar!4v1697507283306!5m2!1ses-419!2sar"
+            width="150" height="160" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="redes">
+        <h3>Redes Sociales</h3>
+        <div class="c_redes">
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-regular fa-envelope fa-xl"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="linea"></div>
+    Copyright Grupo 404 &copy;2023
+    <br>
+    <div class="letraschicas">Aviso Legal | Accesibilidad | Avisos de incidencias | Privacidad</div>
+  </footer>
+
+  </main>
+
+  <script src="./script.js"></script>
+  <script src="./contacto.js"></script>
 </body>
+
 </html>

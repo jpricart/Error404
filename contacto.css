@@ -38,24 +38,17 @@ body {
 /* header */
 
 header {
-  max-width: 1000px;
   width: 100%;
   margin: 0 20px;
-  border-radius: 100px;
   height: fit-content;
   position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #0019fc;
+  align-self: center;
   overflow: hidden;
-  top: 10px;
   z-index: 999;
 }
-
-/* Contenido del header */
-
-/* marquesina */
 
 .marquesina {
   width: 100%;
@@ -180,11 +173,101 @@ header {
   color: var(--clr-celeste);
 }
 
+/* header sticky */
+
+header.scrolled {
+  max-width: 1000px;
+  width: 100%;
+  top: 10px;
+  border-radius: 100px;
+  box-shadow: 1px 1px 10px #00000091;
+}
+
+/* menu responsive */
+
+.r__menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.911);
+  overflow: hidden;
+}
+
+.r__menu .fa-circle-xmark {
+  font-size: 3em;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.r__menu .fa-circle-xmark:hover {
+  color: red;
+}
+
+.r__menu .c__logo {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.r__menu .c__logo p {
+  font-size: 4em;
+  color: #fff;
+  font-weight: 700;
+}
+
+.r__menu .c__logo i {
+  font-size: 4em;
+  color: var(--clr-celeste);
+  transform: rotateZ(20deg);
+  margin-right: 3px;
+}
+
+.r__menu .menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.r__menu .menu li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.r__menu .menu li a {
+  font-size: 1.8em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.r__menu .menu li a:hover {
+  color: var(--clr-celeste);
+}
+/* video */
+
 .video{
   width: 100%;
   height: 100%;
-    margin-top: 4em;
+  margin-top: 100px;
 }
+
+/* formulario */
 
 .contactoForm {
   min-height: 100vh;
@@ -211,19 +294,18 @@ header {
 .sectionForm {
   position: relative;
   z-index: 3;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  
+  padding-top: 0;
+  padding-bottom: 10px;
+  display: flex;
+  width: 100%;
 }
 
 .containerForm {
-  max-width: 1080px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-
-  
 }
 
 .section-header {
@@ -246,12 +328,16 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
-  
+  width: 100%;
+  border: 2px solid var(--clr-celeste);
+  border-radius: 30px 30px 30px 30px;
+  overflow: hidden;
+  margin: 30px auto;
 }
 
 .contact-info {
-  width: 50%;
+  width: 100%;
+  padding: 20px;
 }
 
 .contact-info-item {
@@ -288,9 +374,8 @@ header {
 }
 
 .contact-form {
-  background-color: #fff;
   padding: 40px;
-  width: 45%;
+  width: 100%;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -319,10 +404,6 @@ header {
   outline: none;
   resize: none;
 }
-
-
-
-
 
 .contact-form .input-box input[type="submit"]
 {
