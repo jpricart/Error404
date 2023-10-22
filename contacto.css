@@ -374,6 +374,7 @@ header {
   margin-bottom: 10px;
   background: var(--clr-amarillo);
   border-radius: 10px;
+  
 }
 .accordion__question p {
   margin: 5px;
@@ -429,6 +430,7 @@ header {
 
 
 footer {
+  margin-top: 3em;
   width: 100%;
   height: fit-content;
   background: rgb(0, 0, 0);
