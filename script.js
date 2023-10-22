@@ -95,7 +95,7 @@ function actualizarTotal() {
     if (totalPrecio === 0) {
         totalModal.textContent = '$0';
     } else {
-        totalModal.textContent = '$' + totalPrecio.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0, minimumIntegerDigits: 6 });
+        totalModal.textContent = '$' + totalPrecio.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0});
     }
 }
 
@@ -138,7 +138,7 @@ function agregarAlCarrito(producto, precio, imagen, caracteristicas) {
 
     // Crea un párrafo para el precio
     const precioProducto = document.createElement('p');
-    const precioFormateado = '$' + precio.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0, minimumIntegerDigits: 6 });
+    const precioFormateado = '$' + precio.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0});
     precioProducto.textContent = precioFormateado;
 
     // Agrega los párrafos al div contenedor
